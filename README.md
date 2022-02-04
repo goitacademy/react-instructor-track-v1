@@ -1,1 +1,1 @@
-# Lesson 5 - Lifecycle
+# Lesson 6 - HTTP requests
