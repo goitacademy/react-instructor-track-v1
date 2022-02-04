@@ -1,10 +1,15 @@
 import React from 'react';
-
+import './TodoFilter.css';
 const TodoFilter = ({ value, onChange }) => (
-  <label>
-    Filter by name
-    <input type="text" value={value} onChange={onChange} />
-  </label>
+  <div className="TodoFilter">
+    <p className="TodoFilter__label">Filter</p>
+    <input
+      type="text"
+      className="TodoFilter__input"
+      value={value}
+      onChange={onChange}
+    />
+  </div>
 );
 
 export default TodoFilter;

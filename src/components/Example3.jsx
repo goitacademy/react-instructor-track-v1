@@ -4,13 +4,29 @@ import Layout from './Layout/Layout';
 import TodoList from './TodoList/TodoList';
 import TodoEditor from './TodoEditor/TodoEditor';
 import Filter from './TodoFilter/TodoFilter';
-import initialTodos from '../todos.json';
 
 export default class App extends Component {
   state = {
-    todos: initialTodos,
+    todos: [],
     filter: '',
+    showModal: false,
   };
+
+  componentDidMount() {
+    const todos = localStorage.getItem('todos');
+    const parsedTodos = JSON.parse(todos);
+    if (parsedTodos) {
+      this.setState({ todos: parsedTodos });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const nextTodos = this.state.todos;
+    const prevTodos = prevState.todos;
+    if (nextTodos !== prevTodos) {
+      localStorage.setItem('todos', JSON.stringify(nextTodos));
+    }
+  }
 
   addTodo = text => {
     const todo = { id: shortid.generate(), text, completed: false };

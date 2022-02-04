@@ -1,15 +1,20 @@
 import React from 'react';
-import './TodoList.css';
+import Todo from '../Todo/Todo';
+import { List, ListItem } from './TodoList.styled';
 
-const TodoList = ({ todos, onDeleteTodo }) => (
-  <ul className="TodoList">
-    {todos.map(({ id, text }) => (
-      <li key={id} className="TodoList__item">
-        <p className="TodoList__text">{text}</p>
-        <button onClick={() => onDeleteTodo(id)}>Delete</button>
-      </li>
+const TodoList = ({ todos, onDeleteTodo, onToggleCompleted }) => (
+  <List>
+    {todos.map(({ id, text, completed }) => (
+      <ListItem key={id} completed={completed}>
+        <Todo
+          text={text}
+          completed={completed}
+          onToggleCompleted={() => onToggleCompleted(id)}
+          onDelete={() => onDeleteTodo(id)}
+        />
+      </ListItem>
     ))}
-  </ul>
+  </List>
 );
 
 export default TodoList;
