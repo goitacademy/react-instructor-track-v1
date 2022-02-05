@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PageHeading from '../components/PageHeading/PageHeading';
 import Loader from '../components/Loader/Loader';
-import * as bookShelfAPI from '../services/bookshelf-api';
+import BackLink from '../components/BackLink/BackLink';
 
+import * as bookShelfAPI from '../services/bookshelf-api';
 export default function BookDetailsView() {
   const { bookId } = useParams();
   const [book, setBook] = useState(null);
@@ -21,6 +22,7 @@ export default function BookDetailsView() {
     <>
       <PageHeading text={`Book wit id ${bookId}`} />
       {isLoading && <Loader size="xl" />}
+      {!isLoading && <BackLink />}
       {book && (
         <>
           <img src={book.imgUrl} alt={book.title} />
