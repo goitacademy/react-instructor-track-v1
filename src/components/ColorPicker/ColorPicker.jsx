@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './ColorPicker.css';
 
 export class ColorPicker extends Component {

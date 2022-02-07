@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import ReactPlayer from 'react-player';
 import { Layout } from './Layout';
 import { VideoList } from './VideoList/VideoList';

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Layout } from './Layout';
 import { TodoList } from './TodoList/TodoList';
 import initialTodos from './todos.json';
