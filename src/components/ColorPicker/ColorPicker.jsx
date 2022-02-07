@@ -28,7 +28,7 @@ export class ColorPicker extends Component {
     return (
       <div className="ColorPicker">
         <h2 className="ColorPicker__title">Color Picker</h2>
-        <p>Выбран цвет: {label}</p>
+        <p>Selected color: {label}</p>
         <div>
           {options.map(({ label, color }, index) => (
             <button
