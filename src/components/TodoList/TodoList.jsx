@@ -1,4 +1,3 @@
-import React from 'react';
 import Todo from '../Todo/Todo';
 import { List, ListItem } from './TodoList.styled';
 

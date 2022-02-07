@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './TodoEditor.css';
 
 export default class TodoEditor extends Component {

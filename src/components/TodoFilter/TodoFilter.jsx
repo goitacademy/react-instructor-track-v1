@@ -1,4 +1,3 @@
-import React from 'react';
 import './TodoFilter.css';
 const TodoFilter = ({ value, onChange }) => (
   <div className="TodoFilter">

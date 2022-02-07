@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { VideoList } from './VideoList/VideoList';
 import { Player } from './Player/Player';
 import videos from '../videos.json';

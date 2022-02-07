@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { PlayerWrapper, StyledPlayer } from './Player.styled';
 
 export class Player extends Component {

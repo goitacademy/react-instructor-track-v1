@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import shortid from 'shortid';
 import Layout from './Layout/Layout';
 import TodoList from './TodoList/TodoList';

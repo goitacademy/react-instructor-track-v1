@@ -1,4 +1,3 @@
-import React from 'react';
 import { Wrapper, Text, Checkbox, Button } from './Todo.styled';
 
 const Todo = ({ text, completed, onToggleCompleted, onDelete }) => (
