@@ -1,5 +1,7 @@
 # Lesson 1 - JSX. Components. Collections
 
+## Libraries
+
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [date-fns](https://date-fns.org/)
 - [prop-types](https://www.npmjs.com/package/prop-types)
