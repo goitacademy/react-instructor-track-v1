@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodoFilter = ({ value, onChange }) => (
   <label>
-    Filter by name
+    Filter todos
     <input type="text" value={value} onChange={onChange} />
   </label>
 );
